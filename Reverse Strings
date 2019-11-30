@@ -27,3 +27,11 @@ def spin_words(sentence):
 spin_words("Welcome")
 spin_words("emocleW")
 spin_words("This is a testcase")
+
+# 1 liners
+def spin_words(sentence):
+    return ' '.join(word if len(word)<5 else word[::-1] for word in sentence.split())
+
+# Other 1 liner
+def spin_words(sentence):
+    return " ".join([x[::-1] if len(x) >= 5 else x for x in sentence.split(" ")])
