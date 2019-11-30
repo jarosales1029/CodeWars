@@ -1,0 +1,29 @@
+#Reverse single words
+def spin_words(sentence):
+    
+    wordLst = len(sentence)
+    rLst = ""
+    for i in range(wordLst):
+        rLst += sentence[wordLst-1-i]
+        
+    return print(rLst)
+    
+spin_words("Welcome")
+spin_words("emocleW")
+
+
+#Reverse all strings with 5 or more characters in a sentence
+def spin_words(sentence):
+    
+    wordLst = sentence.split()
+    workLst = []
+    for j in wordLst:
+        if len(j) >= 5:
+            workLst.append(j[::-1])
+        else:
+            workLst.append(j)
+    return print(' '.join(workLst))
+    
+spin_words("Welcome")
+spin_words("emocleW")
+spin_words("This is a testcase")
