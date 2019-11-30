@@ -1,0 +1,12 @@
+#Reverse single words
+def spin_words(sentence):
+    
+    wordLst = len(sentence)
+    rLst = ""
+    for i in range(wordLst):
+        rLst += sentence[wordLst-1-i]
+        
+    return print(rLst)
+    
+spin_words("Welcome")
+spin_words("emocleW")
