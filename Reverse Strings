@@ -1,6 +1,5 @@
 #Reverse all strings with 5 or more characters in a sentence
 def spin_words(sentence):
-    
     wordLst = sentence.split()
     workLst = []
     for j in wordLst:
@@ -9,10 +8,12 @@ def spin_words(sentence):
         else:
             workLst.append(j)
     return print(' '.join(workLst))
-    
+
+#Tests
 spin_words("Welcome")
 spin_words("emocleW")
 spin_words("This is a testcase")
+
 
 # 1 liners
 def spin_words(sentence):
