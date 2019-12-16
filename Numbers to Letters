@@ -12,7 +12,7 @@ def switcher(arr):
                      '10':'q', '9' :'r', '8' :'s', '7' :'t', 
                      '6' :'u', '5' :'v', '4' :'w', '3' :'x', 
                      '2' :'y', '1' :'z', '27':'!', '28':'?', 
-                     '29':' '}[j]for j in arr])
+                     '29':' '}[i]for i in arr])
                      
 # Tests
 switcher(['24', '12', '23', '22', '4', '26', '9', '8'])
@@ -23,14 +23,14 @@ switcher(['12','28','25','21','25','7','11','22','15'])
 
 
 def switcher(arr):
-    d = {str(i): chr(123-i) for i in range(1,27)}
+    d = {str(j): chr(123-j) for j in range(1,27)}
     d.update({'27':'!'})
     d.update({'28':'?'})
     d.update({'29':' '})
     d.update({'0':''})
-    return ''.join([d[str(i)] for i in arr])
+    return ''.join([d[str(j)] for j in arr])
 
 
 chars = '_zyxwvutsrqponmlkjihgfedcba!? '
 def switcher(arr):
-    return print(''.join(chars[int(i)] for i in arr if i != '0'))
+    return print(''.join(chars[int(j)] for j in arr if j != '0'))
