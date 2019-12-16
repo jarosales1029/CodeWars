@@ -1,17 +1,29 @@
-# Reverse strings with 5 or more characters in a sentence
+Write a function that takes in a string of one or more words, and returns the same string, but 
+with all five or more letter words reversed (Just like the name of this Kata). 
+Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+Examples: 
+spin_Words( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" 
+spin_Words( "This is a test") => returns "This is a test" 
+spin_Words( "This is another test" )=> returns "This is rehtona test"
+
+# Reverse strings with 5 or more characters from 1 string given
 def spin_words(sentence):
     workLst = []
     for j in sentence.split():
-        if len(j) >= 5:
-            workLst.append(j[::-1])
+        if len(j) < 5:
+            workLst.append(j) 
         else:
-            workLst.append(j)
+            workLst.append(j[::-1])
     return print(' '.join(workLst))
 
 # Tests
 spin_words("Welcome")
 spin_words("emocleW")
 spin_words("This is a testcase")
+spin_words("Hey fellow warriors")
+spin_words("This is a test")
+spin_words("This is another test")
 
 # 1 liner    
 def spin_words(sentence):
