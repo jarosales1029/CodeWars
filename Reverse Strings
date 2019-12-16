@@ -1,4 +1,4 @@
-#Reverse strings with 5 or more characters in a sentence
+# Reverse strings with 5 or more characters in a sentence
 def spin_words(sentence):
     workLst = []
     for j in sentence.split():
@@ -8,7 +8,7 @@ def spin_words(sentence):
             workLst.append(j)
     return print(' '.join(workLst))
 
-#Tests
+# Tests
 spin_words("Welcome")
 spin_words("emocleW")
 spin_words("This is a testcase")
