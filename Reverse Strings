@@ -17,6 +17,6 @@ spin_words("This is a testcase")
 def spin_words(sentence):
     return print(' '.join(j if len(j) < 5 else j[::-1] for j in sentence.split()))
 
-# Other 1 liner
+# Other way
 def spin_words(sentence):
     return print(' '.join(j[::-1] if len(j) > 4 else j for j in sentence.split()))
