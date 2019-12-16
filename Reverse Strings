@@ -1,8 +1,7 @@
 #Reverse all strings with 5 or more characters in a sentence
 def spin_words(sentence):
-    wordLst = sentence.split()
     workLst = []
-    for j in wordLst:
+    for j in sentence.split():
         if len(j) >= 5:
             workLst.append(j[::-1])
         else:
