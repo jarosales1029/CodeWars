@@ -13,7 +13,6 @@ spin_words("Welcome")
 spin_words("emocleW")
 spin_words("This is a testcase")
 
-
 # 1 liner    
 def spin_words(sentence):
     return print(' '.join(j if len(j) < 5 else j[::-1] for j in sentence.split()))
