@@ -6,7 +6,7 @@ If a value is present in b, all of its occurrences must be removed from the othe
 array_diff([1,2,2,2,3],[2]) == [1,3]
 
 
-#Comparing Lists
+# Comparing Lists
 def array_diff(a, b):
     workLst = []
     for i in a:
@@ -14,7 +14,7 @@ def array_diff(a, b):
             workLst.append(i)
     return workLst
 
-#Tests
+# Tests
 array_diff([1,2],[1])
 array_diff([1,2,2,2,3],[2])
 array_diff([1,2], [1])  #a was [1,2], b was [1], expected [2]"
